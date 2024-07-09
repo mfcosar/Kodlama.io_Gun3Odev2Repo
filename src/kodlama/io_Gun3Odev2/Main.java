@@ -5,8 +5,15 @@ public class Main {
 	public static void main(String[] args) {
 		
 		User user1 = new User(1, "Yeni Kullanıcı" , "yenikullanici@biremail.com");
-		User instructor1 = new User(2, "Engin Demiroğ", "engindemirog@birmail.com");
-		User student1 = new User(3, "Mf Cosar", "biremail@hotmail.com");
+		Instructor instructor1 = new Instructor();
+		instructor1.setId(2);
+		instructor1.setFullName("Engin Demiroğ");
+		instructor1.setEmail("engindemirog@birmail.com");
+				
+		Student student1 = new Student();
+		student1.setId(3);
+		student1.setFullName("Mf Cosar");
+		student1.setEmail("biremail@hotmail.com");
 		
 		User[] users = new User[] {user1, instructor1, student1};
 		

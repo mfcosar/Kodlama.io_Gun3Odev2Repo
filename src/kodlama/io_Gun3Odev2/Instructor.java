@@ -5,7 +5,7 @@ public class Instructor extends User{
 	private String[] coursesGiven;
 	
 	public Instructor() {
-		
+		super();
 	}
 
 	public Instructor(String[] coursesGiven) {
